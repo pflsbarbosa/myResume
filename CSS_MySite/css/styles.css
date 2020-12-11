@@ -1,0 +1,228 @@
+html, body {  font-family: "Comic Sans MS", cursive, sans-serif !important; height: 100%; }
+body { background: white; font-size: 15px; color:#2b0057;  line-height: 1.64; margin: 0; padding: 0; height: 100vh;}
+h1 { font-size: 30px;}
+h2{font-size:22px;}
+h1,h2 {text-align: center; top: 100px; margin: 0 35px 10px 35px; }
+h3, h4, h5, h6, strong, b { margin-bottom: 20px; font-size: 17px; }
+p { top: 100px; margin: 0 35px 10px 35px;  }
+.text-section { padding-left: 0; margin-left: 0; margin-right: 0; height: 300px; text-align: justify; font-size: 20px; }
+.hr { background-color: orange; width: 45%; height: 1px; filter:alpha(opacity=20); }
+.hrSpot {border-color: orange; border-style: none; border-top-style: dotted; border-width: 10px; width: 15%; margin: 50px auto; }
+/* Print resume  */
+.visiblePrint {display: none;}
+
+/* overlay ---------------------------------------------------------------------------  */
+#overlay { position: fixed; display: none; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; background-color: black; z-index: 999; cursor: pointer; }
+#overlay .containerOverlay {text-align: center; background-color: black; color: orange;font-size: 45px;}
+#overlay .containerOverlay > img-thumbnail.my-eye-Draw {margin:10% 0; }
+#overlay > div > div > h6 {text-align: center;}
+#overlay > div > img {margin-left: 0;}
+
+/* start draw  ----------------------------------------------- */
+
+.my-eye-Draw { border: 5px solid orange;
+  background-color: black;
+  border-radius: 50%;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in;
+  vertical-align: middle; margin-top: 165px; margin-left: 10%; border-top: 50px; border-bottom: 50px;
+  /*  border-radius: 50%; ...aternative to bootstrap 'rounded-circle'*/
+}
+ .my-eye-Draw:hover {transform: scale(1.5);}
+/* end draw  ----------------------------------------------- */
+/* end of overlay   -------------------------------------------------------------------  */
+
+
+
+/* NavBar-------------------------------------------------------------------- */
+#navbar-vertical {top: 0; height: 55px; width: 60px; padding: 0; opacity: 0.8; }
+#navbar-vertical > .navbar-header > button {background-color:#2b0057; }
+#navbar-vertical > div.navbar-header > button > a {width: auto; height: auto;}
+#navbar-vertical > div.navbar-header > button > a > svg {width: 30px; height: 30px; color: #FFFFFF;}
+#navbar-vertical a {margin-left: 2px; display: block; padding: 8px; background-color: #2b0057;  width: 110px;height: 60px;}
+#navbar-vertical > div.navbar-collapse.navbar-ex1-collapse.collapse.show > ul > li:nth-child(1) > a{
+    padding-top: 20px;
+    font-size: 20px;    
+}
+#navbar-vertical > div.navbar-collapse.navbar-ex1-collapse.collapse.show > ul > li {height: 60px;}
+.navbar { border: 0;  top: 100%;  height:auto; width: 110px; position: absolute;  z-index: 998; }
+.navbar .navbar-collapse { padding: 0; max-height: none; }
+.navbar .navbar-nav { float: none; }
+.navbar-nav { margin: 0; }
+.navbar .nav > li { display: block; float: none; /* height: 80px; */ }
+.navbar .nav > li a { display: block;  height: 80px; text-align: center; padding-top: 30px;  color: #FFFFFF; }
+.navbar .nav > li a:hover, .navbar .nav > li a:focus { color: orange; }
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { background: #2b0057; color:#FFFFFF; }
+/* .navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar { background: #2b0057; } */
+
+.fixed .navbar { position: fixed; top: 60px; }
+
+.dropdown { position: relative; display: inline-block;}
+.dropdown-content { display: none; position: relative; /*position: absolute; ...display subsections project over the contact li*/
+     min-width: 80px;  } /* z-index: 1; */
+.dropdown:hover .dropdown-content { display: block; }
+.dropdown > li .dropbtn, li a {color: white; text-align: center;}
+#navbar-vertical > div.navbar-collapse.navbar-ex1-collapse.collapse.show > ul > div > div > li > a:hover{color: orange;}
+
+/* end of navbar -------------------------------------------------------------*/
+
+.sections { padding-top: 5%;  width: 100%;  padding-bottom: 100px;}
+
+
+/*  Introduction -------------------------------------------- */
+
+.introduction{ height: 100%; width: auto; text-align: center; box-shadow: inset 0 -5px 15px -6px black; }
+.myImage{background-image: url('../images/BlueWhiteMyImage.png'); background-repeat: no-repeat;background-size: contain;background-position: center; height: 90%; margin-left: 10px; }
+.card-img-overlay{padding: 0;}
+.introduction > h1 {font-weight: bold; }
+/*  end introduction ------------------------------------------*/
+
+
+#profile > div.row {margin-bottom: 0;}
+#profile { background-color: white; }
+#profile .row > div { margin-bottom: 20px; }
+#profile .row > div img {/* img.center {display:block;margin:0 auto;} */border-color: orange; border-width: thin;  width: 100%; max-width: 230px; height: auto; border-radius: 50%;}
+#profile .row  { text-align: justify; margin-bottom: 0;height: 400px; margin: 10px 35px 10px 35px; display: flex;  flex-wrap: wrap;}
+#profile .row > h1 {text-align: center;}
+#profile .row > col-md-6 {height: 300px;}
+#profile .row .col-md-6 .row {height:300px; }
+#profile .col-md-6 .col-md-6 > p {padding-top: 25px;}
+#profile .col-md-6 .col-md-6 > div {height: 400px;}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 264px;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  margin: 5px auto;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  border: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: white;
+  color: black;
+  transform: rotateY(180deg);
+  padding-top: 15px;
+}
+
+
+
+
+/* Title Section model */
+.title-text-section { padding: 5px 0 0 0; text-align: center; }
+/* subtitle Quotes model */
+#sectionSubTitleQuote { font-size: 20px;  text-align:center; }
+/*.subTitleQuote {} */ /* quote it'self */
+.quoteAuthor {font-size: 15px; }
+.quotes {text-align: center; margin-top: 2%;}
+
+#experiences{background-color: #f0efef;}
+/* Time Line */
+
+/* The actual timeline (the vertical ruler) */
+.timeline { position: relative; max-width: 1200px; margin: 0 auto; }
+
+/* The enterpriseLink alignment */
+.timeline .row .row { width: 490px; height: auto; margin: 0;}
+.timeline .enterpriseLink {width: 100%; align-items: center; word-wrap: break-word; border: 0;}
+.timeline .enterpriseLinkIcon {width: 0; height: 0; align-items: center; padding-left: 0; border: 0; }
+.timeline h2,h5, h6 {margin: 0;text-align: left;}
+.timeline ul {list-style: none; padding-left: 3%; }
+.timeline .rectangleIcon {width:100px!important; height:auto; margin-top: 0; }
+.timeline .squareIcon {width:50px; height:auto; margin-top: 0; border: 0; }
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after { content: ''; position: absolute; width: 6px; background-color: #2b0057; top: 0; bottom: 0; left: 50%; margin-left: -3px; }
+/* Container around content */
+.container { padding: 10px 40px; position: relative; background-color: inherit; width: 50%; }
+/* The circles on the timeline */
+.container::after { content: ''; position: absolute; width: 25px; height: 25px; right: -12px; background-color: white; border: 3px solid #000000; top: 15px; border-radius: 50%; z-index: 1; }
+/* Place the container to the left */
+.left { margin-left: 0; }
+/* Place the container to the right */
+.right { left: 50%; margin-left: 0; }
+/* Add arrows to the left container (pointing right) */
+.left::before { content: " "; height: 0; position: absolute; top: 22px; width: 0; z-index: 1; right: 30px; border: medium solid white; border-width: 10px 0 10px 10px; border-color: transparent transparent transparent white; }
+/* Add arrows to the right container (pointing left) */
+.right::before { content: " "; height: 0; position: absolute; top: 22px; width: 0; z-index: 1; left: 30px; border: medium solid white; border-width: 10px 10px 10px 0; border-color: transparent white transparent transparent; }
+/* Fix the circle for containers on the right side */
+.right::after { left: -14px; }
+/* The actual content */
+.content { padding: 20px 30px; background-color: white; position: relative; border-radius: 6px; }
+/* Media queries - Responsive timeline on screens less than 600px wide */
+
+
+#abilities { padding-bottom: 100px;}
+.checked {color: orange; }
+.skills {margin: 5% auto;}
+
+#abilities > h3 {text-align: center; margin: 10px 35px;}
+
+#projects1  .btn.btn-outline-dark {margin-left: 10px;}
+
+
+#projects2  .btn.btn-outline-primary {margin-left: 10px;}
+
+#navbar-vertical > div.navbar-collapse.navbar-ex1-collapse.collapse.show {font-size: 10px;}
+#navbar-vertical > div.collapse.navbar-collapse.navbar-ex1-collapse > ul {padding-top: 0;}
+#navbar-vertical > div.navbar-collapse.navbar-ex1-collapse.collapse.show > ul > div {height: 0;}
+#navbar-vertical > div.navbar-collapse.navbar-ex1-collapse.collapse.show > ul > div > li {height: 20px;}
+#navbar-vertical > div.navbar-collapse.navbar-ex1-collapse.collapse.show > ul > div > li > a {padding-top: 0; height: 40px;}
+#navbar-vertical > div.navbar-collapse.navbar-ex1-collapse.collapse.show > ul > li:nth-child(5) > a {margin-top: 40px;}
+#navbar-vertical > div.navbar-collapse.navbar-ex1-collapse.collapse.show > ul > div > div {height: 30px;}
+#navbar-vertical > div.navbar-collapse.navbar-ex1-collapse.collapse.show > ul > div > div > li {height: 30px;}
+#profile{padding-top: 5px;}
+
+
+
+/* Footer/ Bottom-container --------------------------------------------------------- */
+.bottom-container > a:hover{color: white; }
+.bottom-container { background-color: #2b0057;color: #ffffff; padding: 50px 0 20px; }
+.bottom-container > .row {line-height:100px;  text-align:center;}
+
+/*  links   +++++++++++++++++++++++++++++++++++++++++++++++++ */
+ .myLink, #downloadPrint > a  {color: orange;}
+ .myLink:hover, #downloadPrint > a:hover  { color: white; text-decoration: none; }
+ #downloadPrint > a { cursor: pointer;}
+ /*  Linkedin */
+#contact > div > div:nth-child(2) > a:nth-child(2){margin-right: 30px;}
+ /*  Resume/CV.pdf */
+#contact > div > div:nth-child(3) > svg {margin-right: 30px;}
+#followMe > a {margin-right: 30px;}
+
+#contact > hr {display:none;}
+
+#copyright{ color: #EAF6F6; font-size: 0.85rem; text-align: center; margin: 2% auto; }

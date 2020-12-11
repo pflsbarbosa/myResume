@@ -1,0 +1,4 @@
+@media (max-width: 1140px ) {  
+  #profile .row { height: auto; }
+  #profile .text-section { height: auto;}
+}

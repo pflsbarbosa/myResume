@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+#h1Photos{
+  margin-top: 0 5px;
+  text-align:center ;
+}
+ul#album-photos {
+  width: auto;
+  margin: auto;
+  padding: 5px 50px 50px 50px;
+  overflow: hidden;
+  list-style-type: none;
+  
+}
+ul#album-photos li {
+  float: left;
+  width: 160px;
+  height: 160px;
+  margin: 40px;
+  border-radius: 10%;
+  border: 5px solid #ffffff;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in;
+}
+ul#album-photos li span {
+  opacity: 0;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000000;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10%;
+  font-size: 9pt;
+  line-height: 300px;
+  padding: 10px;
+}
+ul#album-photos li:hover{
+transform: scale(1.5);
+}
+ul#album-photos li:hover span {
+  opacity: 1;
+  }
+
+ul#album-photos li#backEndPhoto01 {
+  background: url('../images/Simon\ Game2.png')no-repeat;
+  background-position: 50% 50%;
+  background-size:cover;
+  background-color: #ffffff;
+}
+ul#album-photos li#backEndPhoto01:hover {
+  background-position: 0px 0px;
+  background-size: 150px 150px;
+}
+ul#album-photos li#backEndPhoto02 {
+  background: url('../images/drumkit.png')no-repeat;
+  background-position: 50% 50%;
+  background-size:cover;
+  background-color: #ffffff;
+}
+ul#album-photos li#backEndPhoto02:hover {
+  background-position: 0px 0px;
+  background-size: 150px 150px;
+}
+ul#album-photos li#backEndPhoto03 {
+  background: url('../images/keeper.png')no-repeat;
+  background-position: 50% 50%;
+  background-size:cover;
+  background-color: #ffffff;
+}
+ul#album-photos li#backEndPhoto03:hover {
+  background-position: 0px 0px;
+  background-size: 150px 150px;
+}
+ul#album-photos li#backEndPhoto04 {
+  background: url('../images/todolist.png')no-repeat;
+  background-position: 50% 50%;
+  background-size:cover;
+  background-color: #ffffff;
+}
+ul#album-photos li#backEndPhoto04:hover {
+  background-position: 0px 0px;
+  background-size: 150px 150px;
+}
+ul#album-photos li#backEndPhoto05 {
+  background: url('../images/cSharpProject.png')no-repeat;
+  background-position: 50% 50%;
+  background-size:cover;
+  background-color: #ffffff;
+}
+ul#album-photos li#backEndPhoto05:hover {
+  background-position: 0px 0px;
+  background-size: 150px 150px;
+}
+ul#album-photos li#backEndPhoto06 {
+  background: url('../images/kendoGrid.png')no-repeat;
+  background-position: 50% 50%;
+  background-size:cover;
+  background-color: #ffffff;
+}
+ul#album-photos li#backEndPhoto06:hover {
+  background-position: 0px 0px;
+  background-size: 150px 150px;
+}
+ul#album-photos li#backEndPhoto07 {
+  background: url('../images/xyz2.png')no-repeat;
+  background-position: 50% 50%;
+  background-size:cover;
+  background-color: #ffffff;
+}
+ul#album-photos li#backEndPhoto07:hover {
+  background-position: 0px 0px;
+  background-size: 150px 150px;
+}
+
+ul#album-photos li#frontEndPhoto01 {
+  background: url('../images/hidog.png')no-repeat;
+  background-position: 50% 50%;
+  background-size:cover;
+  background-color: #ffffff;
+}
+ul#album-photos li#frontEndPhoto01:hover {
+  background-position: 0px 0px;
+  background-size: 150px 150px;
+}
+ul#album-photos li#frontEndPhoto02 {
+  background: url('../images/glass-oculos-preto-peq.png')no-repeat;
+  background-position: 50% 50%;
+  background-size:cover;
+  background-color: #ffffff;
+}
+ul#album-photos li#frontEndPhoto02:hover {
+  background-position: 0px 0px;
+  background-size: 150px 150px;
+}
+ul#album-photos li#frontEndPhoto03 {
+  background: url('../images/xyz2.png')no-repeat;
+  background-position: 50% 50%;
+  background-size:cover;
+  background-color: #ffffff;
+}
+ul#album-photos li#frontEndPhoto03:hover {
+  background-position: 0px 0px;
+  background-size: 150px 150px;
+}
+ul#album-photos li#frontEndPhoto04 {
+  background: url('../images/BlueWhiteMyImage.png')no-repeat;
+  background-position: 50% 50%;
+  background-size:cover;
+  background-color: #ffffff;
+}
+ul#album-photos li#frontEndPhoto04:hover {
+  background-position: 0px 0px;
+  background-size: 150px 150px;
+}
+ul#album-photos li#frontEndPhoto05 {
+  background: url('../images/enigmaProject.png')no-repeat;
+  background-position: 50% 50%;
+  background-size:cover;
+  background-color: #ffffff;
+}
+ul#album-photos li#frontEndPhoto05:hover {
+  background-position: 0px 0px;
+  background-size: 150px 150px;
+}
+ul#album-photos li#frontEndPhoto06 {
+  background: url('../images/enigmaProject.png')no-repeat;
+  background-position: 50% 50%;
+  background-size:cover;
+  background-color: #ffffff;
+}
+ul#album-photos li#frontEndPhoto06:hover {
+  background-position: 0px 0px;
+  background-size: 150px 150px;
+}

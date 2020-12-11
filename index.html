@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paulo Barbosa - Resume</title>
+
+  <!-- Google Fonts -->
+
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS_MySite/css/styles.css">
+  <link rel="stylesheet" href="CSS_MySite/css/mobile/max_width600px.css">
+  <link rel="stylesheet" href="CSS_MySite/css/mobile/max_width767px.css">
+  <link rel="stylesheet" href="CSS_MySite/css/mobile/max_width1140px.css">
+  <link rel="stylesheet" href="CSS_MySite/css/mobile/w640px_h360px.css">
+  <link rel="stylesheet" href="CSS_MySite/css/animations.css">
+  <link rel="stylesheet" href="CSS_MySite/css/print.css">
+  <link rel="stylesheet" href="CSS_MySite/css/photosProjects.css">
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!--icons -->
+  <link rel="icon" href="CSS_MySite/images/favicon4.ico">
+  <!-- Optional JavaScript -->
+  <script src="index.js" charset="utf-8"></script>
+  <!-- Bootstrap Scripts -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+
+<body onpageshow="on()" data-spy="scroll" data-target="#navbar-vertical" class="fixed" data-offset="20">
+  <div class="introduction sections invisiblePrint" onmouseover="quoteCard()">
+    <h1>I'm Paulo</h1>
+    <p>A Full Stack Web Developer</p>
+    <hr class="hr">
+    <p id="quote_TELawrence_Card"></p>
+    <p id="quote_author_Card"></p>
+
+    <div class="myImage"></div>
+
+  </div>
+  <nav id="navbar-vertical" class="navbar navbar-default" role="navigation">
+    <!--navbar-expand-sm   ...to expand the menu by default-->
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <a id="animated-a" href="javascript:void(0);" class="icon" onclick="ExpandNavNar()">
+          <i id="animatedIcon" class="fa fa-bars"></i>
+        </a>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#profile" class="scroll-down">Profile</a>
+        </li>
+        <li><a href="#experiences">Time Line</a></li>
+        <li><a href="#abilities">Abilities</a></li>
+        <div class="dropdown">
+          <li><a class="dropbtn">Projects...</a></li>
+          <div class="dropdown-content">
+            <li><a href="#projects1">Front end</a></li>
+            <li><a href="#projects2">Back end</a></li>
+          </div>
+        </div>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </nav>
+  <div class="container-sections">
+    <img class="visiblePrint" src="CSS_MySite/images/cv_logo.png" alt="CV Logo">
+    <div id="profile" class="sections" onmouseover="quoteProfile()" alt="profile">
+      <hr class="hrSpot invisiblePrint">
+      <div class="quotes">
+        <h1>Profile</h1>
+        <div id="sectionSubTitleQuote" class="invisiblePrint">
+          <p id="profileSubTitleQuote" class="invisiblePrint"></p>
+          <p id="profileQuoteAuthor" class="quoteAuthor invisiblePrint"></p>
+        </div>
+        <hr class="hrSpot invisiblePrint">
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <h1 class="invisiblePrint">Details </h1>
+          <div class="row">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img class="rounded-circle img-thumbnail" src="CSS_MySite/images/paulo_3.png" alt="Paulo">
+                </div>
+                <div class="flip-card-back">
+                  <h2>Paulo Barbosa</h2>
+                  <strong>Software Developer</strong><br>
+                  <strong>Age:</strong><a id="myAge"><script>myAge()</script></a><br>
+                  <strong>Country:</strong>Portugal.<br>
+                  <strong>City:</strong>O'Porto city<br>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div id="aboutMe" class="col-lg-6 col-md-6 col-sm-12">
+          <h1>About me</h1>
+          <p class="text-section">
+            I completed my academic studies in the area of ​​Business Economics.
+            But some time later, I discovered that "IT", was what I always wanted!
+            After years of experience in related fields, I started my requalification in the technological area.
+            Today, I am a junior developer, with knowledge of front-end and back-end techniques. I like to work
+            with a team, whose members like to share all their knowledge, without any fear and always with the goal of
+            going further.
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <div id="experiences" class="sections" onmouseover="quoteExperiences()" alt="time line">
+      <hr class="hrSpot invisiblePrint">
+      <div class="quotes">
+        <h1>Time line</h1>
+        <div id="sectionSubTitleQuote" class="invisiblePrint">
+          <p id="experienceSubTitleQuote" class="invisiblePrint"></p>
+          <p id="experienceQuoteAuthor" class="quoteAuthor invisiblePrint"></p>
+        </div>
+        <hr class="hrSpot invisiblePrint">
+      </div>
+
+      <div class="timeline">
+        <div class="container right">
+          <div class="content">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12">
+                <a class="enterpriseLinkIcon" href="https://www.udemy.com/" target="_blank"><img class="rectangleIcon"
+                    src="https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg" alt="sisqual icon"
+                    style="width:50px; height:50px; border: 0;"></img></a>
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12">
+                <h2>Udemy - 2020</h2>
+                <h6>The Complete 2020 Web Development Bootcamp</h6>
+                <div class="enterpriseLink">
+                  <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/"
+                    style="text-align:center" target="_blank">
+                    https://www.udemy.com/course/the-complete-web-development-bootcamp/ </a>
+                </div>
+              </div>
+
+            </div>
+            <hr>
+            <div class="row">
+              <ul>
+                <li>
+                  <h3>Full-stack web developer course</h3>
+                </li>
+                <li>
+                  <h6> HTML, CSS, Javascript, Node, React, MongoDB</h6>
+                </li>
+                <li>Last updated on 2/2020</li>
+                <li>Sep. of 2019 – Jan de 2020</li>
+                <li>On line</li>
+                <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-0EAIY7H3.jpg" target="_blank">
+                  <li>Certificate of course completion</li>
+                </a>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="container left">
+          <div class="content">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <a class="enterpriseLinkIcon" href="https://www.sisqual.com/pt-pt/" target="_blank"><img
+                    class="squareIcon" src="CSS_MySite/images/sisqual.ico" alt="sisqual icon"
+                    style="width:50px; height:50px; border: 0;"></img></a>
+              </div>
+              <div class="col-lg-8 col-md-8 col-sm-12">
+                <h2>Sisqual - 2019</h2>
+                <h6>Workforce management</h6>
+                <div class="enterpriseLink">
+                  <a href="https://www.sisqual.com/pt-pt/" target="_blank"> https://www.sisqual.com/pt-pt/ </a>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <ul>
+                <li>
+                  <h3>Software Developer</h3>
+                </li>
+                <li>
+                  <h6> C#, Asp.Net MVC , CSS, HTML, Java Script, SQL.</h6>
+                </li>
+                <li>Full time.</li>
+                <li>Mar. de 2019 – Jan. de 2020</li>
+                <li>O'Porto city</li>
+                <li></li>
+                <li>
+                  <h5>Consultant</h5>
+                </li>
+                <li>Jan. de 2019 – Fev. de 2019</li>
+                <li>O'Porto city</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="container right">
+          <div class="content">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <a class="enterpriseLinkIcon" href="https://www.sisqual.com/pt-pt/" target="_blank"><img
+                    class="squareIcon" src="CSS_MySite/images/sisqual.ico" alt="sisqual icon"
+                    style="width:50px; height:50px; border: 0;"></img></a>
+              </div>
+              <div class="col-lg-8 col-md-8 col-sm-12">
+                <h2>Sisqual - 2018</h2>
+                <h6>Workforce management</h6>
+                <div class="enterpriseLink">
+                  <a href="https://www.sisqual.com/pt-pt/" target="_blank"> https://www.sisqual.com/pt-pt/ </a>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <ul>
+                <li>
+                  <h4>Soft. Dev. - Curricular stage</h4>
+                </li>
+                <li>
+                  <h6> C#, Asp.Net, API, SQL.</h6>
+                </li>
+                <li>Full time.</li>
+                <li>May. of 2018 – Aug. de 2018</li>
+                <li>O'Porto city</li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="container left">
+          <div class="content">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <a class="enterpriseLinkIcon" href="https://www.lpi.org/" target="_blank"><img class="squareIcon"
+                    src="CSS_MySite/images/linuxInstituteLogo.PNG" alt="Linux Institute Icon"
+                    style="width:70px; height:70px; border: 0;"></img></a>
+              </div>
+              <div class="col-lg-8 col-md-8 col-sm-12">
+                <h2>NDG-Linux Essentials - 2018</h2>
+                <h6>Linux Professional Institute</h6>
+                <div class="enterpriseLink">
+                  <a href="https://www.lpi.org/" target="_blank"> https://www.lpi.org/ </a>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <ul>
+                <li>
+                  <h3>Certificat - NDG-Linux Essentials</h3>
+                </li>
+                <li>Sep. de 2018</li>
+                <li>On line</li>
+                <a href="https://drive.google.com/open?id=1W3Kb-ztNeS9jFRPqCeUoCVbf6kjfsG20" target="_blank">
+                  <li>Certificate of course completion</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="container right">
+          <div class="content">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12">
+                <a class="enterpriseLinkIcon" href="https://www.netacad.com/" target="_blank"><img class="squareIcon"
+                    src="CSS_MySite/images/CiscoNetworkAcademyLogo.PNG" alt="cisco icon"
+                    style="width:70px; height:70px; border: 0;"></img></a>
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12">
+                <h3>CCNA - 2018</h3>
+                <h6>Cisco Networking Academy</h6>
+                <div class="enterpriseLink">
+                  <a href="https://www.netacad.com/" style="text-align:center" target="_blank"> https://www.netacad.com/
+                  </a>
+                </div>
+              </div>
+
+            </div>
+            <hr>
+            <div class="row">
+              <ul>
+                <li>
+                  <h3>Certificate - CCNA Routing And Switching Introduction to Networks</h3>
+                </li>
+                <li>Apr. of 2018</li>
+                <li>On line</li>
+                <a href="https://drive.google.com/open?id=1glgRgQiXH_w1vMDIZbYmbWWAnJw_R8KM" target="_blank">
+                  <li>Certificate of course completion</li>
+                </a>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="container left">
+          <div class="content">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12">
+                <a class="enterpriseLinkIcon" href="https://www.cesae.pt/" target="_blank"><img class="rectangleIcon"
+                    src="CSS_MySite/images/cesaeLogo30anos.png" alt="cesae icon"
+                    style="width:50px; height:50px; border: 0;"></img></a>
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12">
+                <h3>CESAE - 2017/18</h3>
+                <h6>Centro de Serviços e Apoio às Empresas</h6>
+                <div class="enterpriseLink">
+                  <a href="https://www.cesae.pt/" style="text-align:center" target="_blank"> https://www.cesae.pt/ </a>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <ul>
+                <li>
+                  <h5><b>CET</b>-TECHNICAL SPECIALIST IN MANAGEMENT OF NETWORKS AND COMPUTER SYSTEMS-Level 5</h5>
+                </li>
+                <li>
+                  <h6>Network and Systems Administration (hours: 1300)</h6>
+                </li>
+                <li>Full time.</li>
+                <li>Sept. of 2017 – May. de 2018</li>
+                <li>O'Porto city</li>
+                <a href="https://drive.google.com/file/d/1WhkTsvmL02fIAbwH1N_Iu43pYsnzbr7B/view?usp=sharing"
+                  target="_blank">
+                  <li>Certificate of course completion</li>
+                </a>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <a class="enterpriseLinkIcon" href="https://www.iefp.pt/" target="_blank"><img class="squareIcon"
+                    src="CSS_MySite/images/logo-iefp.png" alt="iefp icon"
+                    style="width:100px; height:auto; border: 0;"></img></a>
+              </div>
+              <div class="col-lg-8 col-md-8 col-sm-12">
+                <h2>IEFP - 2017</h2>
+                <h6>Instituto de Emprego e Formação Pessoal</h6>
+                <div class="enterpriseLink">
+                  <a href="https://www.iefp.pt/" target="_blank"> https://www.iefp.pt/ </a>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <ul>
+                <li>
+                  <h5>Computer Programmer Course</h5>
+                </li>
+                <li>
+                  <h6>C,C++,SQL,Java</h6>
+                </li>
+                <li>Half time.</li>
+                <li>Abril. of 2017 – Jul. de 2017</li>
+                <li>O'Porto city</li>
+                <a href="https://drive.google.com/file/d/1LYiwFkBd8Y4LG-7pbrZEAph_KMz2-HcN/view?usp=sharing"
+                  target="_blank">
+                  <li>Certificate of course completion</li>
+                </a>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <a class="enterpriseLinkIcon" href="http://www.newglobalpet.com/pt/" target="_blank"><img
+                    class="rectangleIcon" src="CSS_MySite/images/newGlobalPet.PNG" alt="New Global icon"
+                    style="width:50px; height:50px; border: 0;"></img></a>
+              </div>
+              <div class="col-lg-8 col-md-8 col-sm-12">
+                <h2>2015 - 2016</h2>
+                <h6>New Global -pet business</h6>
+                <div class="enterpriseLink">
+                  <a href="http://www.newglobalpet.com/pt/" target="_blank"> http://www.newglobalpet.com/pt/ </a>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <ul>
+                <li>
+                  <h5>North Account Manager 2</h5>
+                </li>
+                <li>Aug. of 2015 – Aug. de 2016</li>
+                <li>O'Porto city</li>
+
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <a class="enterpriseLinkIcon" href="https://home.barclays/" target="_blank"><img class="rectangleIcon"
+                    src="CSS_MySite/images/barclaysLogo.PNG" alt="iefp icon"
+                    style="width:100px; height:auto; border: 0;"></img></a>
+              </div>
+              <div class="col-lg-8 col-md-8 col-sm-12">
+                <h2>2010-2015</h2>
+                <h6>BARCLAYCARD.<br />Credit card.</h6>
+                <div class="enterpriseLink">
+                  <a href="https://home.barclays/" target="_blank"> https://home.barclays/ </a>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <ul>
+                <h5>Card account promoter</h5>
+                <li>Dec. of 2010 – Jul. de 2015</li>
+                <li>O'Porto city</li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="abilities" class="sections invisiblePrint" onmouseover="quoteAbilities()" alt="abilities">
+      <div class="quotes">
+        <hr class="hrSpot invisiblePrint">
+        <h1>Abilities</h1>
+        <div id="sectionSubTitleQuote" class="invisiblePrint">
+          <p id="abilitieSubTitleQuote" class="invisiblePrint"></p>
+          <p id="abilitieQuoteAuthor" class="quoteAuthor invisiblePrint"></p>
+        </div>
+        <hr class="hrSpot invisiblePrint">
+      </div>
+      <h3>Skills</h3>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <table class="skills">
+            <tr>
+              <td><span>html(5)</span></td>
+              <td>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </td>
+            </tr>
+            <tr>
+              <td><span>css(3)</span></td>
+              <td>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </td>
+            </tr>
+            <tr>
+              <td><span>javascript</span></td>
+              <td>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <table class="skills">
+            <tr>
+              <td><span>nodejs</span></td>
+              <td>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </td>
+            </tr>
+            <tr>
+              <td><span>react</span></td>
+              <td>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </td>
+            </tr>
+            <tr>
+              <td><span>dom</span></td>
+              <td>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <table class="skills">
+            <tr>
+              <td><span>jQuery</span></td>
+              <td>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </td>
+            </tr>
+            <tr>
+              <td><span>c#</span></td>
+              <td>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </td>
+            </tr>
+            <tr>
+              <td><span>sql</span></td>
+              <td>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <table class="skills">
+            <tr>
+              <td><span>mongodb</span></td>
+              <td>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </td>
+            </tr>
+            <tr>
+              <td><span>mvc</span></td>
+              <td>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </td>
+            </tr>
+            <tr>
+              <td><span>Bootstrap</span></td>
+              <td>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+
+    </div>
+    <div id="projects1" class="sections invisiblePrint" onmouseover="quoteProjFrontEnd()" alt="projects">
+      <div class="quotes">
+        <hr class="hrSpot invisiblePrint">
+        <h1 id="h1Photos">Projects Front End</h1>
+        <div id="sectionSubTitleQuote" class="invisiblePrint">
+          <p id="projFrontEndSubTitleQuote" class="invisiblePrint"></p>
+          <p id="projFrontEndQuoteAuthor" class="quoteAuthor invisiblePrint"></p>
+        </div>
+        <hr class="hrSpot invisiblePrint">
+      </div>
+      <h1 id="h1Photos">Academic projects</h1>
+      <div class="row">
+        <ul id="album-photos">
+          <li id="frontEndPhoto01" type="button" onclick="window.open('https://pflsbarbosa.github.io/HiDog/.')"><span>Hi Dog</span></li>
+          <li id="frontEndPhoto02" type="button"
+            onclick="window.open('https://pflsbarbosa.github.io/GGProject/index.html')"><span>Google Glass</span></li>                
+        </ul>
+      </div>
+      <h1 id="h1Photos">Professional projects</h1>
+      <div class="row">
+        <ul id="album-photos">
+          <li id="frontEndPhoto03" type="button" onclick="window.open('https://pflsbarbosa.github.io/xyz-medImob/')">
+            <span>Real State XYZ
+            </span></li>    
+          <li id="frontEndPhoto04" type="button" onclick="window.open('https://pflsbarbosa.github.io/myResume/')"><span>My Resume</span></li>
+          <li id="frontEndPhoto05" type="button" onclick="window.open('./CSS_MySite/inProgress.html')"><span>Project In
+              Progress</span></li>
+          <li id="frontEndPhoto06" type="button" onclick="window.open('./CSS_MySite/inProgress.html')"><span>Project In
+              Progress</span></li>
+        </ul>
+      </div>
+    </div>
+    <div id="projects2" class="sections invisiblePrint" onmouseover="quoteProjBackEnd()" alt="projects">
+      <div class="quotes">
+        <hr class="hrSpot invisiblePrint">
+        <h1>Projects Back End</h1>
+        <div id="sectionSubTitleQuote" class="invisiblePrint">
+          <p id="projBackEndSubTitleQuote" class="invisiblePrint"></p>
+          <p id="projBackEndQuoteAuthor" class="quoteAuthor invisiblePrint"></p>
+        </div>
+        <hr class="hrSpot invisiblePrint">
+      </div>
+      <h1 id="h1Photos">Academic projects</h1>     
+      <div class="row">
+        <ul id="album-photos">
+          <li id="backEndPhoto01" type="button" onclick="window.open('https://pflsbarbosa.github.io/SimonGame/.')">
+            <span>Simon
+              Game (JS)</span>
+          </li>
+          <li id="backEndPhoto02" type="button" onclick="window.open('https://pflsbarbosa.github.io/DrumKit/.')">
+            <span>Drum kit (DOM)</span></li>
+          <li id="backEndPhoto03" type="button" onclick="window.open('https://pflsbarbosa.github.io/keeper/.')">
+            <span>Keeper (React)</span></li>
+          <li id="backEndPhoto04" type="button" onclick="window.open('https://pflsbarbosa.github.io/todolist/')">
+            <span>To Do List (React)</span></li>          
+        </ul>
+      </div>
+      <h1 id="h1Photos">Professional projects</h1>       
+      <div class="row">
+        <ul id="album-photos">  
+          <li id="backEndPhoto05" type="button" onclick=""><span>Org./store employee files</span></li>
+          <li id="backEndPhoto06" type="button" onclick=""><span>Kendo Grid (server side) MVC</span></li>
+          <li id="backEndPhoto07" type="button" onclick="window.open('./CSS_MySite/videos/2020-11-20 14-25-16.mp4')"><span>(NodeJS/MongoDB)</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="overlay" onclick="off()">
+    <div class="containerOverlay">
+      <img class="rounded-circle img-thumbnail my-eye-Draw " src="CSS_MySite/images/my-eye-Draw.jpg" />
+      <div>
+        <h1>Welcome! I'm Paulo... a programmer.</h1>
+        <p>
+          <h6>Click every where to visit my page.</h6>
+        </p>
+      </div>
+    </div>
+
+  </div>
+  <div id="contact" class="bottom-container">
+    <hr class="hr">
+    <div class="row">
+      <div id="getInTouch" class="col-lg-4 col-md-4 col-sm-4">
+        <h2>Get In Touch</h2>
+        <a class="myLink" href="mailto:pflsbarbosa@gmail.com">CONTACT ME</a>
+      </div>
+      <div id="followMe" class="col-lg-4 col-md-4 col-sm-4">
+        <h2>Follow me</h2>
+        <a class="myLink" href="https://www.linkedin.com/in/paulo-barbosa-software-developer">LinkedIn</a>
+        <a class="myLink" href="https://www.facebook.com/paulofernando.barbosa.96">FaceBook</a>
+        <a class="myLink" href="https://pflsbarbosa.github.io/myResume/">Resume/Portfolio </a>
+      </div>
+      <div id="downloadPrint" class="col-lg-4 col-md-4 col-sm-4 invisiblePrint">
+        <h2>Print</h2>       
+        <a class="myLink" onclick="printMyWindow()">Print my resume (CV)</a>
+      </div>
+    </div>
+    <p id="copyright">
+      <script>
+        fullYear()
+      </script>
+    </p>
+  </div>
+</body>
+
+</html>

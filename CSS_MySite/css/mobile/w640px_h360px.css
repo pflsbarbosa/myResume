@@ -1,0 +1,13 @@
+@media only screen and (width:640px) and (height: 360px){
+  /* Microsoft Lumia */
+
+  body { font-size: 10px; }
+  body > div.card.bg-dark.text-white > img.responsive {height: 360px;}
+
+  #card-TELawrence {font-size: 15px; top: 15%;padding: 60px;}
+  #card-author{font-size: 10px;}
+  .dropdown { position: relative; display: inline-block;}
+  .dropdown:onclick .dropdown-content { display: block; }
+
+
+}
